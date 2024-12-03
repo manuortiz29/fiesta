@@ -1,0 +1,72 @@
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+	margin: 10px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease-in-out;
+}
+
+.colores {
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+	background: linear-gradient(to right, #f00, #0ff);
+}
+
+.rojo { background-color: red; }
+.azul { background-color: blue; }
+.verde { background-color: green; }
+.amarillo { background-color: yellow; }
+.morado { background-color: purple;}
+.rosa { background-color: pink;}
+.cian { background-color: cyan;}
+.naranja { background-color: orange;}
+.marron { background-color: brown;}
+// Agrega más colores aquí
+
+.color:hover {
+	transform: scale(1.1);
+}
+
+body {
+  background: linear-gradient(45deg, #00ff8c, #ff0080);
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position:   
+ 0% 50%;
+  }
+}
+
+button {
+  background: linear-gradient(45deg, #f3f3f3);
+  color: black;
+  padding: 15px 30px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
